@@ -23,7 +23,7 @@
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hello">
-<meta property="og:url" content="https://jayden-qiu.github.io/[object%20Object]">
+<meta property="og:url" content="https://jayden-qiu.github.io/English/hello">
 <meta property="og:site_name" content="技术博客-Jayden">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="article:tag" content="博客,简历,技术">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jayden-qiu.github.io/[object%20Object]">
+<link rel="canonical" href="https://jayden-qiu.github.io/English/hello">
 
 
 <script id="page-configurations">
@@ -156,7 +156,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/[object%20Object]">
+    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/English/hello">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
