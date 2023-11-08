@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"jayden-qiu.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"categories":"/categories"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="To be both a speaker of words and a doer of deeds.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Golang">
-<meta property="og:url" content="https://jayden-qiu.github.io/Golang/index.html">
+  <meta name="description" content="1、bool2、string3、数字型   type desc    (u)int (无符号)不规定长度，在32位系统就32位，64位系统就64位   (u)int8 (无符号)规定长度8   (u)int16 (无符号)规定长度16   (u)int32 (无符号)规定长度32   (u)int64 (无符号)规定长度64   unitptr 指针，长度跟操作系统相关   4、字符型   typ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3、内置变量类型">
+<meta property="og:url" content="https://jayden-qiu.github.io/Golang/3%E3%80%81%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="技术博客-Jayden">
-<meta property="og:description" content="To be both a speaker of words and a doer of deeds.">
+<meta property="og:description" content="1、bool2、string3、数字型   type desc    (u)int (无符号)不规定长度，在32位系统就32位，64位系统就64位   (u)int8 (无符号)规定长度8   (u)int16 (无符号)规定长度16   (u)int32 (无符号)规定长度32   (u)int64 (无符号)规定长度64   unitptr 指针，长度跟操作系统相关   4、字符型   typ">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-08T02:19:09.000Z">
+<meta property="article:published_time" content="2023-11-08T03:14:40.000Z">
 <meta property="article:modified_time" content="2023-11-08T03:24:26.168Z">
 <meta property="article:author" content="Jayden">
 <meta property="article:tag" content="博客,简历,技术">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jayden-qiu.github.io/Golang/">
+<link rel="canonical" href="https://jayden-qiu.github.io/Golang/3%E3%80%81%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -41,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Golang | 技术博客-Jayden
-</title>
+  <title>3、内置变量类型 | 技术博客-Jayden</title>
   
 
 
@@ -149,43 +148,164 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/Golang/3%E3%80%81%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jayden">
+      <meta itemprop="description" content="To be both a speaker of words and a doer of deeds.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术博客-Jayden">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          3、内置变量类型
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">Golang
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2023-11-08 11:14:40 / 修改时间：11:24:26" itemprop="dateCreated datePublished" datetime="2023-11-08T11:14:40+08:00">2023-11-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Golang/" itemprop="url" rel="index"><span itemprop="name">Golang</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="1、bool"><a href="#1、bool" class="headerlink" title="1、bool"></a>1、bool</h3><h3 id="2、string"><a href="#2、string" class="headerlink" title="2、string"></a>2、string</h3><h3 id="3、数字型"><a href="#3、数字型" class="headerlink" title="3、数字型"></a>3、数字型</h3><table>
+<thead>
+<tr>
+<th>type</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>(u)int</td>
+<td>(无符号)不规定长度，在32位系统就32位，64位系统就64位</td>
+</tr>
+<tr>
+<td>(u)int8</td>
+<td>(无符号)规定长度8</td>
+</tr>
+<tr>
+<td>(u)int16</td>
+<td>(无符号)规定长度16</td>
+</tr>
+<tr>
+<td>(u)int32</td>
+<td>(无符号)规定长度32</td>
+</tr>
+<tr>
+<td>(u)int64</td>
+<td>(无符号)规定长度64</td>
+</tr>
+<tr>
+<td>unitptr</td>
+<td>指针，长度跟操作系统相关</td>
+</tr>
+</tbody></table>
+<h3 id="4、字符型"><a href="#4、字符型" class="headerlink" title="4、字符型"></a>4、字符型</h3><table>
+<thead>
+<tr>
+<th>type</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>长度8位（8bit）</td>
+</tr>
+<tr>
+<td>rune</td>
+<td>长度32位</td>
+</tr>
+<tr>
+<td><em>ps: rune 相当于 go 的 char</em></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="5、浮点型"><a href="#5、浮点型" class="headerlink" title="5、浮点型"></a>5、浮点型</h3><table>
+<thead>
+<tr>
+<th>type</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float32</td>
+<td></td>
+</tr>
+<tr>
+<td>float64</td>
+<td></td>
+</tr>
+<tr>
+<td>complex64</td>
+<td>64位的复数</td>
+</tr>
+<tr>
+<td>complex128</td>
+<td>128位的复数</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Golang/2%E3%80%81%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89/" rel="prev" title="2、变量定义">
+      <i class="fa fa-chevron-left"></i> 2、变量定义
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -236,6 +356,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81bool"><span class="nav-number">1.</span> <span class="nav-text">1、bool</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81string"><span class="nav-number">2.</span> <span class="nav-text">2、string</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E6%95%B0%E5%AD%97%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">3、数字型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">4、字符型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="nav-number">5.</span> <span class="nav-text">5、浮点型</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
