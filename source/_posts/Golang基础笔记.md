@@ -4,24 +4,24 @@ date: 2023-11-08 11:31:11
 tags:
 categories:
 - Golang
-description: 保证新手一看就懂，一学就会
 ---
 
 # 一、环境安装
-### 1、下载地址
+## 下载地址
 [https://studygolang.com/dl](https://studygolang.com/dl)
 
-### 2、选择合适平台后安装，后验证是否安装完成
+## 选择合适平台后安装，后验证是否安装完成
 ```shell
 go version
 ```
+<!--more-->
 
-### 3、设置 go module 为开启状态
+## 设置 go module 为开启状态
 ```shell
 go env -w GO111MODULE=on
 ```
 
-### 4、设置 go package 国内镜像地址
+## 设置 go package 国内镜像地址
 ```shell
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
@@ -71,11 +71,11 @@ var j,k,l = true,123,"xi"
 | %p     | 打印地址     |
 
 # 三、内置变量类型
-### 1、bool
+## bool
 
-### 2、string
+## string
 
-### 3、数字型
+## 数字型
 | type     | desc                                                 |
 | -------- | ---------------------------------------------------- |
 | (u)int   | (无符号)不规定长度，在32位系统就32位，64位系统就64位 |
@@ -85,14 +85,14 @@ var j,k,l = true,123,"xi"
 | (u)int64 | (无符号)规定长度64                                   |
 | unitptr  | 指针，长度跟操作系统相关                             |
 
-### 4、字符型
+## 字符型
 | type | desc            |
 | ---- | --------------- |
 | byte | 长度8位（8bit） |
 | rune | 长度32位        |
 *ps: rune 相当于 go 的 char*
 
-### 5、浮点型
+## 浮点型
 | type       | desc        |
 | ---------- | ----------- |
 | float32    |             |
@@ -629,7 +629,7 @@ mkdir learngo && cd learngo && touch main.go
 go mod init learngo
 ```
 
-### main.go 下调用 op 文件夹里面的数据 
+## main.go 下调用 op 文件夹里面的数据 
 ```go
 package main
 
@@ -643,7 +643,7 @@ func main() {
 }
 ```
 
-### op/op.go 内容为
+## op/op.go 内容为
 ```go
 package op
 // 目录名可以和包名不一样
@@ -663,7 +663,7 @@ func sub(a,b int) int  {
 ```
 
 # 十五、扩展已有类型
-## 1、通过别名方法，扩展已有类型
+## 通过别名方法，扩展已有类型
 ```go
 // 定义了新类型Queue，该类型具有几种方法
 type Queue []int
@@ -683,7 +683,7 @@ func (q *Queue) IsEmpty() bool{
     return len(*q) == 0
 }
 ```
-## 2、通过组合方法，扩展已有类型
+## 通过组合方法，扩展已有类型
 ```go
 type myStructName struct {
     name *package.targetStruct
@@ -693,15 +693,15 @@ func (name *myStructName)funcName() {
     //.....扩展方法
 }
 ```
-## 3、通过内嵌方法，扩展已有类型
+## 通过内嵌方法，扩展已有类型
 
 # 十六、依赖管理 go mod 使用
-### 尝试安装 zap 包
+## 尝试安装 zap 包
 ```shell
 go get -u go.uber.org/zap
 ```
 
-### go.mod 文件自动生成依赖目录
+## go.mod 文件自动生成依赖目录
 ```go
 module gomodTest
 
@@ -716,12 +716,12 @@ require (
 *go.mod 目录下 生成 go.sum 校验文件*
 *下载的依赖放在了go安装的位置，如 D:\go\bin\pkg\mod\*
 
-### 指定 依赖的版本安装
+## 指定 依赖的版本安装
 ```go
 go get -u go.uber.org/zap@v1.11
 ```
 
-### 清除 .sum 文件对历史包的引用
+## 清除 .sum 文件对历史包的引用
 ```go
 go mod tidy
 ```	
