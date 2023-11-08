@@ -8,7 +8,8 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "up": "hexo clean && hexo generate && hexo deploy",
-    "category": "hexo new page 目录"
+    "category": "hexo new page 目录",
+    "post": "hexo new post 文章标题"
   },
   "hexo": {
     "version": "6.3.0"
