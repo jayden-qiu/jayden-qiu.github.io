@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"jayden-qiu.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"categories":"/categories"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="panic 恢复实践">
+  <meta name="description" content="详情点击阅读全文">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Go标准库recover">
-<meta property="og:url" content="https://jayden-qiu.github.io/Golang/Go%E6%A0%87%E5%87%86%E5%BA%93recover/index.html">
+<meta property="og:title" content="Gorm数据库驱动">
+<meta property="og:url" content="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/Gorm%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8/index.html">
 <meta property="og:site_name" content="技术博客-Jayden">
-<meta property="og:description" content="panic 恢复实践">
+<meta property="og:description" content="详情点击阅读全文">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-08T08:06:27.000Z">
+<meta property="article:published_time" content="2023-11-09T02:17:03.000Z">
 <meta property="article:modified_time" content="2023-11-09T03:10:47.764Z">
 <meta property="article:author" content="Jayden">
 <meta property="article:tag" content="博客,简历,技术">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jayden-qiu.github.io/Golang/Go%E6%A0%87%E5%87%86%E5%BA%93recover/">
+<link rel="canonical" href="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/Gorm%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Go标准库recover | 技术博客-Jayden</title>
+  <title>Gorm数据库驱动 | 技术博客-Jayden</title>
   
 
 
@@ -156,7 +156,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/Golang/Go%E6%A0%87%E5%87%86%E5%BA%93recover/">
+    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/Gorm%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -169,7 +169,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Go标准库recover
+          Gorm数据库驱动
         </h1>
 
         <div class="post-meta">
@@ -178,28 +178,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-11-08 16:06:27" itemprop="dateCreated datePublished" datetime="2023-11-08T16:06:27+08:00">2023-11-08</time>
+              <time title="创建时间：2023-11-09 10:17:03 / 修改时间：11:10:47" itemprop="dateCreated datePublished" datetime="2023-11-09T10:17:03+08:00">2023-11-09</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-09 11:10:47" itemprop="dateModified" datetime="2023-11-09T11:10:47+08:00">2023-11-09</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Golang/" itemprop="url" rel="index"><span itemprop="name">Golang</span></a>
+                  <a href="/categories/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">Go微服务组件</span></a>
                 </span>
             </span>
 
           
-            <div class="post-description">panic 恢复实践</div>
+            <div class="post-description">详情点击阅读全文</div>
 
         </div>
       </header>
@@ -210,10 +204,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">      fmt.Println(<span class="string">&quot;c&quot;</span>)</span><br><span class="line">   <span class="keyword">defer</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123; <span class="comment">// 必须要先声明defer，否则不能捕获到panic异常</span></span><br><span class="line">      fmt.Println(<span class="string">&quot;d&quot;</span>)</span><br><span class="line">      <span class="keyword">if</span> err := <span class="built_in">recover</span>(); err != <span class="literal">nil</span> &#123;</span><br><span class="line">         fmt.Println(err) <span class="comment">// 这里的err其实就是panic传入的内容</span></span><br><span class="line">      &#125;</span><br><span class="line">      fmt.Println(<span class="string">&quot;e&quot;</span>)</span><br><span class="line">   &#125;()</span><br><span class="line">   f() <span class="comment">//开始调用f</span></span><br><span class="line">   fmt.Println(<span class="string">&quot;f&quot;</span>) <span class="comment">//这里开始下面代码不会再执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">f</span><span class="params">()</span></span> &#123;</span><br><span class="line">   fmt.Println(<span class="string">&quot;a&quot;</span>)</span><br><span class="line">   <span class="built_in">panic</span>(<span class="string">&quot;异常信息&quot;</span>)</span><br><span class="line">   fmt.Println(<span class="string">&quot;b&quot;</span>) <span class="comment">//这里开始下面代码不会再执行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mysql:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">3306</span></span><br><span class="line">  <span class="attr">config:</span> <span class="string">charset=utf8mb4&amp;parseTime=True&amp;loc=Local</span></span><br><span class="line">  <span class="attr">db-name:</span> <span class="string">localpro</span></span><br><span class="line">  <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">  <span class="attr">password:</span> <span class="string">root</span></span><br></pre></td></tr></table></figure>
 
-<p>运行结果</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">c</span><br><span class="line">a</span><br><span class="line">d</span><br><span class="line">异常信息</span><br><span class="line">e</span><br></pre></td></tr></table></figure>
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &quot;gorm.io/driver/mysql&quot;</span></span><br><span class="line"><span class="comment">// &quot;gorm.io/gorm&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// DB 数据库驱动</span></span><br><span class="line"><span class="keyword">var</span> DB *gorm.DB</span><br><span class="line"></span><br><span class="line"><span class="comment">// initGorm 初始化数据库</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">initGorm</span><span class="params">(cfg *configs.Config)</span></span> &#123;</span><br><span class="line">	mcfg := cfg.Mysql</span><br><span class="line"></span><br><span class="line">	dsn := fmt.Sprintf(<span class="string">&quot;%s:%s@tcp(%s:%s)/%s?%s&quot;</span>, mcfg.Username, mcfg.Password, mcfg.Path, mcfg.Port, mcfg.DbName, mcfg.Config)</span><br><span class="line"></span><br><span class="line">	<span class="comment">// newLogger := logger.New(</span></span><br><span class="line">	<span class="comment">// 	log.New(os.Stdout, &quot;\r\n&quot;, log.Ldate), // io writer（日志输出的目标，前缀和日志包含的内容——译者注）</span></span><br><span class="line">	<span class="comment">// 	logger.Config&#123;</span></span><br><span class="line">	<span class="comment">// 		SlowThreshold:             time.Second, // 慢 SQL 阈值</span></span><br><span class="line">	<span class="comment">// 		LogLevel:                  logger.Info, // 日志级别</span></span><br><span class="line">	<span class="comment">// 		IgnoreRecordNotFoundError: true,        // 忽略ErrRecordNotFound（记录未找到）错误</span></span><br><span class="line">	<span class="comment">// 		Colorful:                  true,        // 彩色打印</span></span><br><span class="line">	<span class="comment">// 	&#125;,</span></span><br><span class="line">	<span class="comment">// )</span></span><br><span class="line"></span><br><span class="line">	DB, _ = gorm.Open(mysql.Open(dsn)) <span class="comment">// &amp;gorm.Config&#123;Logger: newLogger&#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -228,12 +222,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/English/%E5%8D%81%E5%85%AD%E7%A7%8D%E6%97%B6%E6%80%81/" rel="prev" title="十六种时态">
-      <i class="fa fa-chevron-left"></i> 十六种时态
+    <a href="/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/Zap%E6%9C%AC%E5%9C%B0%E6%97%A5%E5%BF%97/" rel="prev" title="Zap本地日志">
+      <i class="fa fa-chevron-left"></i> Zap本地日志
     </a></div>
       <div class="post-nav-item">
-    <a href="/Golang/Go%E6%A0%87%E5%87%86%E5%BA%93flag/" rel="next" title="Go标准库flag">
-      Go标准库flag <i class="fa fa-chevron-right"></i>
+    <a href="/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/GoRedis%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A9%B1%E5%8A%A8/" rel="next" title="GoRedis数据库驱动">
+      GoRedis数据库驱动 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -293,6 +287,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
