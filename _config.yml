@@ -5,7 +5,7 @@
 # Site
 title: 技术博客-Jayden
 subtitle:
-description: To be both a speaker of words and a doer of deeds.
+description: 一个互联网小民工，会写 JS、TS、Python、GO、PHP、Rust
 keywords: 博客,简历,技术
 author: Jayden
 language: zh-CN
@@ -105,3 +105,9 @@ deploy:
   type: git
   repo: git@github.com:jayden-qiu/jayden-qiu.github.io.git
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
