@@ -197,8 +197,7 @@ links_settings:
   layout: block
 
 links:
-  Title: http://yoursite.com
-  有脸: "hahahhahah.com"
+  原博客系统: https://cnblogs.com/jayden-qiu
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -557,14 +556,14 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: changyan
+  active: disqusjs
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
   lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
-    # categories: /categories
+    categories: /categories
     #disqus:
     #  text: Load Disqus
     #  order: -1
@@ -583,18 +582,18 @@ disqus:
 # Demo: https://suka.js.org/DisqusJS/
 # For more information: https://github.com/SukkaW/DisqusJS
 disqusjs:
-  enable: false
+  enable: true
   # API Endpoint of Disqus API (https://disqus.com/api/).
   # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
   api:
-  apikey: # Register new application from https://disqus.com/api/applications/
-  shortname: # See: https://disqus.com/admin/settings/general/
+  apikey: p0IXKF4V43VLSaUu2YfB82aNrtvRjfrvZdZFaXKj1H5liqMfILWdVV7LemZQWzTz # Register new application from https://disqus.com/api/applications/
+  shortname: jayden-blog # See: https://disqus.com/admin/settings/general/
 
 # Changyan
 changyan:
-  enable: true
+  enable: false
   appid: cywYdTVew
   appkey: 20d2c94168b28931c443191f86145751
   #post_meta_order: 0
@@ -760,8 +759,8 @@ chatra:
 # See: https://www.tidiochat.com
 # Dashboard: https://www.tidiochat.com/panel/dashboard
 tidio:
-  enable: false
-  key: # Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer
+  enable: true
+  key: dxwpgtbdtqljnoweujbchudicjc0wgwo # Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer
 
 # ---------------------------------------------------------------
 # Tags Settings
