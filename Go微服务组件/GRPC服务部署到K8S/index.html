@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"jayden-qiu.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqusjs","storage":true,"lazyload":true,"nav":{"categories":"/categories"},"activeClass":"disqusjs"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一个互联网小民工，会写 JS、TS、Python、GO、PHP、Rust">
-<meta property="og:type" content="website">
-<meta property="og:title" content="技术博客-Jayden">
-<meta property="og:url" content="https://jayden-qiu.github.io/categories/GRPC/index.html">
+  <meta name="description" content="详情点击阅读全文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GRPC服务部署到K8S">
+<meta property="og:url" content="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/GRPC%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0K8S/index.html">
 <meta property="og:site_name" content="技术博客-Jayden">
-<meta property="og:description" content="一个互联网小民工，会写 JS、TS、Python、GO、PHP、Rust">
+<meta property="og:description" content="详情点击阅读全文">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-13T07:11:03.000Z">
+<meta property="article:modified_time" content="2023-11-13T07:17:21.333Z">
 <meta property="article:author" content="Jayden">
 <meta property="article:tag" content="博客,简历,技术">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jayden-qiu.github.io/categories/GRPC/">
+<link rel="canonical" href="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/GRPC%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0K8S/">
 
 
 <script id="page-configurations">
@@ -39,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: GRPC | 技术博客-Jayden</title>
+  <title>GRPC服务部署到K8S | 技术博客-Jayden</title>
   
 
 
@@ -185,57 +187,125 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">GRPC
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/GRPC%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0K8S/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jayden">
+      <meta itemprop="description" content="一个互联网小民工，会写 JS、TS、Python、GO、PHP、Rust">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术博客-Jayden">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GRPC服务部署到K8S<a href="https://github.com/jayden-qiu/jayden-qiu.github.io/edit/dev/source/_posts/GRPC%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0K8S.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil-alt"></i></a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-13 15:11:03 / 修改时间：15:17:21" itemprop="dateCreated datePublished" datetime="2023-11-13T15:11:03+08:00">2023-11-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">Go微服务组件</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">详情点击阅读全文</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+        <p>1、先购买<a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/tke2/cluster?rid=1">集群</a>，后创建命名空间 test_app_namespace</p>
+<p>2、后创建镜像仓库 my_repo</p>
+<p>3、本地登录腾讯云容器镜像服务 Docker Registry</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker login ccr.ccs.tencentyun.com --username=</span><br></pre></td></tr></table></figure>
+
+
+<p>4、配置好Dockerfile，打包镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t test_app_namespace/gin-service:1.0 -f ./Dockerfile .</span><br></pre></td></tr></table></figure>
+
+<p>5、docker本地试跑</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name gin-service -p 8080:8080 test_app_namespace/gin-service:1.0</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name gin-service --net host test_app_namespace/gin-service:1.0</span><br></pre></td></tr></table></figure>
+
+<p>6、向 Registry 中推送镜像</p>
+<p>当前 imageId &#x3D; test_app_namespace&#x2F;gin-service:1.0</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker tag [imageId] ccr.ccs.tencentyun.com/test_app_namespace/my_repo:[tag]</span><br><span class="line"></span><br><span class="line">docker push ccr.ccs.tencentyun.com/test_app_namespace/my_repo:[tag]</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-11-09T10:58:06+08:00"
-              content="2023-11-09">
-          11-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/GRPC/Go%E4%BD%BF%E7%94%A8GRPC/" itemprop="url">
-            <span itemprop="name">Go使用GRPC</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/Nginx%E5%81%9AGRPC%E4%BB%A3%E7%90%86/" rel="prev" title="Nginx做GRPC代理">
+      <i class="fa fa-chevron-left"></i> Nginx做GRPC代理
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -417,6 +487,22 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : '' || 'https://disqus.com/api/',
+      apikey    : 'p0IXKF4V43VLSaUu2YfB82aNrtvRjfrvZdZFaXKj1H5liqMfILWdVV7LemZQWzTz',
+      shortname : 'jayden-blog',
+      url       : "https://jayden-qiu.github.io/Go%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6/GRPC%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0K8S/",
+      identifier: "/Go微服务组件/GRPC服务部署到K8S/",
+      title     : "GRPC服务部署到K8S",
+    });
+  }, window.DisqusJS);
+});
+</script>
 
 </body>
 </html>
